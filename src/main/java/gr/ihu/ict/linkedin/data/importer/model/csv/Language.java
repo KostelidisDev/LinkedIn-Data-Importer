@@ -6,5 +6,6 @@ import lombok.Getter;
 @Getter
 @AllArgsConstructor
 public class Language {
-    private String Name, Proficiency;
+    private String Name;
+    private String Proficiency;
 }

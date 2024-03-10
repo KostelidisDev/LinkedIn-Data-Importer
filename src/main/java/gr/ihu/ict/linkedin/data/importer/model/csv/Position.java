@@ -6,5 +6,10 @@ import lombok.Getter;
 @Getter
 @AllArgsConstructor
 public class Position {
-    private String CompanyName, Title, Description, Location, StartedOn, FinishedOn;
+    private String CompanyName;
+    private String Title;
+    private String Description;
+    private String Location;
+    private String StartedOn;
+    private String FinishedOn;
 }

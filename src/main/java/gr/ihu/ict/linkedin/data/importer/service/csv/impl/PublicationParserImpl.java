@@ -4,6 +4,7 @@ import com.opencsv.CSVReader;
 
 import gr.ihu.ict.linkedin.data.importer.model.csv.Publication;
 import gr.ihu.ict.linkedin.data.importer.service.csv.PublicationParser;
+import gr.ihu.ict.linkedin.data.importer.util.DateUtils;
 import io.vavr.control.Try;
 
 import java.util.List;
@@ -17,7 +18,7 @@ public class PublicationParserImpl implements PublicationParser {
                 .flatMap(records -> Try.of(() -> records.stream()
                         .map(record -> new Publication(
                                 record[0],
-                                record[1],
+                                DateUtils.parseDate(record[1]),
                                 record[2],
                                 record[3],
                                 record[4]

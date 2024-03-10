@@ -4,6 +4,7 @@ import com.opencsv.CSVReader;
 
 import gr.ihu.ict.linkedin.data.importer.model.csv.Profile;
 import gr.ihu.ict.linkedin.data.importer.service.csv.ProfileParser;
+import gr.ihu.ict.linkedin.data.importer.util.DateUtils;
 import io.vavr.control.Option;
 import io.vavr.control.Try;
 
@@ -18,7 +19,7 @@ public class ProfileParserImpl implements ProfileParser {
                                 record[1],
                                 record[2],
                                 record[3],
-                                record[4],
+                                DateUtils.parseDate(record[4]),
                                 record[5],
                                 record[6],
                                 record[7],

@@ -4,6 +4,7 @@ import com.opencsv.CSVReader;
 
 import gr.ihu.ict.linkedin.data.importer.model.csv.Certification;
 import gr.ihu.ict.linkedin.data.importer.service.csv.CertificationParser;
+import gr.ihu.ict.linkedin.data.importer.util.DateUtils;
 import io.vavr.control.Try;
 
 import java.util.List;
@@ -19,8 +20,8 @@ public class CertificationParserImpl implements CertificationParser {
                                 record[0],
                                 record[1],
                                 record[2],
-                                record[3],
-                                record[4],
+                                DateUtils.parseDate(record[3]),
+                                DateUtils.parseDate(record[4]),
                                 record[5]
                         ))
                         .collect(Collectors.toList())));
