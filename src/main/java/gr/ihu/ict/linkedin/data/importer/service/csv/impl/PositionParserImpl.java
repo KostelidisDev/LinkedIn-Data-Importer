@@ -4,6 +4,7 @@ import com.opencsv.CSVReader;
 
 import gr.ihu.ict.linkedin.data.importer.model.csv.Position;
 import gr.ihu.ict.linkedin.data.importer.service.csv.PositionParser;
+import gr.ihu.ict.linkedin.data.importer.util.DateUtils;
 import io.vavr.control.Try;
 
 import java.util.List;
@@ -20,8 +21,8 @@ public class PositionParserImpl implements PositionParser {
                                 record[1],
                                 record[2],
                                 record[3],
-                                record[4],
-                                record[5]
+                                DateUtils.parseDate(record[4]),
+                                DateUtils.parseDate(record[5])
                         ))
                         .collect(Collectors.toList())));
 
