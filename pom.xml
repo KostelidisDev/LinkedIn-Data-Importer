@@ -6,7 +6,7 @@
 
     <groupId>gr.ihu.ict</groupId>
     <artifactId>linkedin-data-importer</artifactId>
-    <version>3-SNAPSHOT</version>
+    <version>3.1-SNAPSHOT</version>
 
     <name>LinkedIn Data Importer</name>
 

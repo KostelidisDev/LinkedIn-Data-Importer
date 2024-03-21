@@ -31,7 +31,7 @@ Add the following dependency to your Maven project:
 <dependency>
     <groupId>gr.ihu.ict</groupId>
     <artifactId>linkedin-data-importer</artifactId>
-    <version>2.1-SNAPSHOT</version>
+    <version>3.1-SNAPSHOT</version>
 </dependency>
 ```
 
