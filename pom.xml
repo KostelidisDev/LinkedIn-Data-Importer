@@ -6,22 +6,22 @@
 
     <groupId>gr.ihu.ict</groupId>
     <artifactId>linkedin-data-importer</artifactId>
-    <version>3.1-SNAPSHOT</version>
+    <version>4-SNAPSHOT</version>
 
     <name>LinkedIn Data Importer</name>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-        <java.version>8</java.version>
-        <maven.compiler.target>1.8</maven.compiler.target>
-        <maven.compiler.source>1.8</maven.compiler.source>
-        <maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
+        <java.version>21</java.version>
+        <maven.compiler.target>21</maven.compiler.target>
+        <maven.compiler.source>21</maven.compiler.source>
+        <maven-compiler-plugin.version>3.14.0</maven-compiler-plugin.version>
 
-        <vavr.version>0.10.4</vavr.version>
+        <vavr.version>0.10.6</vavr.version>
         <zip4j.version>2.11.5</zip4j.version>
-        <lombok.version>1.18.22</lombok.version>
-        <opencsv.version>5.9</opencsv.version>
+        <lombok.version>1.18.38</lombok.version>
+        <opencsv.version>5.10</opencsv.version>
         <junit.version>4.13.2</junit.version>
     </properties>
 
