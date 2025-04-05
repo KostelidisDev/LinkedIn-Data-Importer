@@ -8,9 +8,7 @@ import java.io.File;
 import java.io.FileReader;
 
 public interface CsvParser<O> {
-    default Try<O> implementedParse(final CSVReader csvReader) {
-        return Try.failure(new NotImplementedError());
-    }
+    Try<O> implementedParse(final CSVReader csvReader);
 
     default Try<O> parse(File inputFile) {
         return Try.of(() -> new FileReader(inputFile))
